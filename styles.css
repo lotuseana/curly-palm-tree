@@ -5,20 +5,21 @@ body {
     text-align: center;
 }
 .top-text{
-  font-size: 40px;
-  margin-top:40px;
-  display: inline-block;
+    font-size: 40px;
+    margin-top:40px;
+    display: inline-block;
+    
 }
-
-.lowell{
-    margin-left:100px;
-    text-align:left;
+  
+  .lowell{
+      margin-left:50px;
+      text-align:left;
+      width: 1150px;
 }
-.icons{
-    margin-right:300px;
-    text-align:right;
+  .icons{
+      margin-right:200px;
+      text-align:right;
 }
-
 #big-header{
   font-size: 120px;
   text-shadow: 0px 0px 10px black;
