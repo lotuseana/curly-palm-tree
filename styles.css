@@ -1,7 +1,13 @@
-
-
 body {
     background-color: rgba(47, 49, 56, 1.0);
     color: rgba(215,216,220,1.0);
     font-family: Archivo, Calibri, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+.vertical {
+    border-left: 5px solid rgba(161, 213, 238 ,1.0);
+    height: 500px;
+    position: fixed;
+    left:70%;
 }
