@@ -12,6 +12,7 @@ body {
 .lowell{
     margin-left:100px;
     text-align:left;
+    position:absolute;
 }
 .icons{
     margin-right:300px;
