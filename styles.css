@@ -7,12 +7,12 @@ body {
 .top-text{
   font-size: 40px;
   margin-top:40px;
+  position:absolute;
 }
 
 .lowell{
     margin-left:100px;
     text-align:left;
-    position:absolute;
 }
 .icons{
     margin-right:300px;
