@@ -13,8 +13,14 @@
 <body>
     <div class = "top-text lowell"> Lowell High School</div>
     <div class = "top-text icons" id="datetime"></div>
+        <script> 
+            var now = new Date();
+            var datetime = now.toDateString();
+            datetime = datetime.substring(0,3)+ "," +datetime.substring(3,datetime.length-4);
+            document.getElementById("datetime").innerHTML = datetime;
+        </script>
     <div class = "date-divider"></div>
-        <h1 id = "big-header">AP COMPUTER SCIENCE A</h1> 
+        <h1 id = "big-header">AP COMPUTER SCIENCE A</h1>
      <div class = "vertical-divider"></div>
      <div class = "box"> 
        <div class = "agenda"> Weekly Agenda </div>
