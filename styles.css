@@ -7,7 +7,7 @@ body {
 .top-text{
   font-size: 40px;
   margin-top:40px;
-  position:absolute;
+  display: inline-block;
 }
 
 .lowell{
