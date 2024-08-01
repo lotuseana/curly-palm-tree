@@ -35,6 +35,7 @@ body {
     height: 70px;
     position: absolute;
     left:85%;
+    margin-top: -50px;
 }
 .box{
   width: 400px;
