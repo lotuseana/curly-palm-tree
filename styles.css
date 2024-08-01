@@ -15,7 +15,6 @@ body {
 }
 .icons{
     margin-right:300px;
-    margin-top:-54px;
     text-align:right;
 }
 
@@ -33,7 +32,6 @@ body {
     border-left: 2px solid rgba(215,216,220,1.0);
     height: 70px;
     position: absolute;
-    margin-top: -55px;
     left:85%;
 }
 .box{
