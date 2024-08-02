@@ -3,7 +3,6 @@ body {
   color: rgba(215,216,220,1.0);
   font-family: Sarabun, Calibri, sans-serif;
   text-align: center;
-  overflow: hidden;
 }
 .top-text{
   font-size: 30px;
@@ -78,4 +77,19 @@ font-size:30px;
 text-align:left;
 float:right;
 margin-right: 170px;
+}
+#light-mode{ 
+position:absolute;
+margin-top:30px;
+margin-left:-200px;
+}
+#dark-mode{ 
+position:absolute;
+margin-top:30px;
+margin-left:-100px;
+}
+#menu{
+position:absolute;
+margin-top:23px;
+
 }
