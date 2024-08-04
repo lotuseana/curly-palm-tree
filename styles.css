@@ -2,9 +2,13 @@
   --bg-color: rgba(40, 41, 48, 1.0);
   --txt-color:rgba(215,216,220,1.0);
   --accent-color:rgba(161, 213, 238 ,1.0);
-  --link-color:rgba(98,117,171,1.0)
-  --active: 2;
-  --inactive: 0;
+  --link-color:rgba(98,117,171,1.0);
+  --active:2;
+  --inactive:0;
+}
+@keyframes mode-switch{
+  from{left:1650px;}
+  to{left:1580px;}
 }
 body {
     background-color: var(--bg-color);
@@ -37,7 +41,7 @@ body {
     border-left: 2px solid var(--accent-color);
     height: 500px;
     position: absolute;
-    left:70%;
+    left:75%;
 }
 #date-divider {
     border-left: 1px solid var(--txt-color);
@@ -54,6 +58,7 @@ body {
   font-size:25px;
   text-align:left;
   float: left;
+  border-radius:20px;
 }
 .agenda{
   font-size: 50px;
@@ -85,24 +90,28 @@ a:hover{
   font-size:30px;
   text-align:left;
   float:right;
-  margin-right: 170px;
+  right: 100px;
+  position:absolute;
 }
 #light-mode{ 
   position:absolute;
-  margin-top:62px;
-  margin-left:-57px;
+  margin-top:46px;
+  margin-left:-30px;
   width:35px;
   filter:invert(0.9);
-  z-index: var(--inactive);
+  z-index:var(--inactive);
+}
+#light-mode:active{ 
+  animation-name:mode-switch;
+  animation-duration:0.5s;
 }
 #dark-mode{ 
   position:absolute;
-  margin-top:67px;
-  margin-left:20px;
+  margin-top:52px;
+  margin-left:25px;
   filter:invert(0.9);
   width:25px;
-  /*z-index: var(--active);*/
-  z-index: 2;
+  z-index:var(--active);
 }
 #menu{
   position:absolute;
@@ -128,6 +137,7 @@ a:hover{
   border-radius:20px;
   z-index:1;
   background:rgba(0,0,0,0.4);
+  filter: drop-shadow(0px 0px 3px black);
 }
 #mode-selector{
   width: 10px;
@@ -140,7 +150,6 @@ a:hover{
   border-radius:20px;
   z-index:1;
   background:rgba(0,0,0,0.4);
-
 }
 #lowell-logo{
   position:absolute;
