@@ -34,11 +34,12 @@ $(document).ready(function() {
   
   
   $("#light-mode").click(function(){
-      lightOn=true;
+    if (!lightOn){
       $("#mode-selector").animate({
-        left:'1680px'},
+        left:'-50px'},
         "fast"
-      );
+      );  }
+      lightOn=true;
       $("#light-mode").css({
         opacity:"var(--active)"
       });
@@ -57,11 +58,12 @@ $(document).ready(function() {
     });
     
     $("#dark-mode").click(function(){
-      lightOn=false;
-      $("#mode-selector").animate({
-        left:'1750px'},
+      if (lightOn){
+       $("#mode-selector").animate({
+        left:'5px'},
         "fast"
-      );
+        );}
+      lightOn=false;
       $("#dark-mode").css({
         opacity:"var(--active)"
       });

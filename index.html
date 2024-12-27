@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Lowell APCSA </title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src = "./j.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lowell APCSA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="j.js"> </script>
+
   </head>
   <body>
-    <div class = "top-text" id="datetime"></div>
-    <script src = "./j.js"></script>
-    <div class = "icons">
-      <a href="https://processing.org/reference/" target ="_blank"><img id="processing-logo" src="https://assets.codepen.io/12819943/Processing_2021_logo.svg"/></a>
-      <a href= "https://github.com" target ="_blank"> <img id="github-logo" src="https://assets.codepen.io/12819943/25231.png" alt="" /></a>
-      <button>
-        <img id = "light-mode" src="https://assets.codepen.io/12819943/brightness-alt-high-fill.svg" alt="" fill:"currentColor">
-      </button>
-      <button>
-        <img id = "dark-mode" src="https://assets.codepen.io/12819943/moon-stars.svg" alt="" >
-        </button>
-      <img id = "menu"src="https://assets.codepen.io/12819943/list.svg" alt="">
+    <div class = "headings-left">
+      <img id = "menu" src="https://assets.codepen.io/12819943/list.svg" alt=""> 
     </div>
-    <div id = "date-divider"></div>
-    <div id = "mode-box"></div>
-    <div id = "mode-selector"></div>
-      <h1 id = "big-header">AP COMPUTER SCIENCE A</h1> 
-    <div class = "vertical-divider"></div>
+    
+    <div class = "headings-right-2">  
+        <img id = "light-mode" src="images/brightness-alt-high-fill.svg" alt="" >
+        <img id = "dark-mode" src="images/moon-stars.svg" alt="" >
+      <div id = "mode-box"></div>
+      <div id = "mode-selector"></div>
+    </div> 
+    
+    <div class = "headings-right">
+      <div id="datetime"></div> 
+      <div id = "date-divider"></div>
+      <a href="https://processing.org/reference/" target ="_blank"><img id="processing-logo" src="images/Processing_2021_logo.svg"/></a>
+      <a href= "https://github.com" target ="_blank"> <img id="github-logo" src="images/github-logo.png" alt="" /></a>
+      <a href= "https://classroom.google.com" target ="_blank"> <img id="google-classroom-logo" src="images/Google-Classroom-Logo.png" alt="" /></a>
+    </div>
+  
+    <h1 id = "big-header"> AP COMPUTER SCIENCE A </h1> 
+  
     <div class = "three">
        <div class = "box"> 
-       <div class = "agenda"> Weekly Agenda </div>
-       <ul>
+        <div class = "agenda"> Weekly Agenda </div>
+        <ul>
          <li> dc98shd98fhpsdf</li>
          <li> dc98shd98fhpsdf</li>
          <li> dc98shd98fhpsdf</li>
          <li> dc98shd98fhpsdf</li>
          <li> dc98shd98fhpsdf</li>
          <li> dc98shd98fhpsdf</li>
-       </ul>  
-       </div>
-       <div class = "subheadings"> 
-        Slides &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; TBD 
-       </div>
-       <div class= "links"> 
-         <br><br>
-         <!-- <iframe src="http://wwww.classroom.google.com" id = "classroom" title="description"></iframe> -->
-       </div>
+        </ul>  
+        </div>
     </div>
+    
     <div id = "side-menu">
       <br><br>
       <div class = "search">
         <input id = "searchbar"></input>
-        <img id = "search-button"src="https://assets.codepen.io/12819943/search.svg" alt="" />
+        <img id = "search-button"src="images/search.svg" alt="" />
       </div>
       <br><br>
       <ul id = "menu-listings">
@@ -65,7 +63,7 @@
         <li>Math.random()</li>
         <li>Codingbat</li>
         <li>OOP - Classes</li>
-        <li><a href="articles/arrays.html">Arrays</a></li>
+        <li>Arrays</li>
         <li>OOP - Arrays of Objects</li>
         <li>OOP - Inheritance and Encapsulation</li>
         <li>Asteroids Part 1</li>
@@ -73,14 +71,18 @@
         <li>Asteroids Part 2 & 3</li>
       </ul>
     </div>
-  <div class = "arrows">
-    <img id = "up-arrow" src="https://assets.codepen.io/12819943/caret-up.svg" alt="" />
-    <img id = "down-arrow"src="https://assets.codepen.io/12819943/caret-down.svg" alt="" />
-  </div>
+  
   <div class = "slide-deck">
     <img class="slides" id ="test-1"src="https://assets.codepen.io/12819943/image_2024-08-12_173101711.png" alt="" />
-         <img class="slides" id ="test0"src="https://assets.codepen.io/12819943/image_2024-08-12_171528214.png" alt="" />
+    <img class="slides" id ="test0"src="https://assets.codepen.io/12819943/image_2024-08-12_171528214.png" alt="" />
     <img class="slides" id ="test1"src="https://assets.codepen.io/12819943/image_2024-08-12_172108438.png" alt="" />
   </div>
+  
+  <div class = "arrows">
+    <img id = "up-arrow" src="images/caret-up.svg" alt="" />
+    <img id = "down-arrow"src="images/caret-down.svg" alt="" />
+  </div>
+  
+  
+  
   </body>
-</html>
